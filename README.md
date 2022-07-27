@@ -9,4 +9,4 @@ This repository consists of some solved problems concerning Data Structures & Al
 
 
 
-[Link to Google](https://www.google.com)
+* [Link to Google](https://www.google.com)
