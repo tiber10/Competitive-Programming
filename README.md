@@ -2,6 +2,8 @@
 This repository consists of some solved problems concerning Data Structures & Algorithms from UVA Online Judge.
 
 # List of the solved problems
+
+## Data Structures
 ### 1D Arrays
 * [Jolly Jumpers](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=979)
 * [Hartals](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=991)
@@ -69,7 +71,68 @@ This repository consists of some solved problems concerning Data Structures & Al
 * [Rails](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=455)
 
 
+## AdHoc
+### 'Time Waster' Problems
+* [Interpreter](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=974)
+* [Australian Voting](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1083)
+* [Graphical Editor](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1208)
 
+### Anagram
+* [Generating Fast](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1039)
+* [Ananagrams](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=92)
+* [Anagram](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=131)
+* [Anagrams](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=395)
+* [Anagrams (II)](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=571)
+* [Word Amalgamation](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=583)
 
+### Game (Card)
+* [Stack 'em Up](https://onlinejudge.org/external/102/10205.pdf)
+* [Poker Hands](https://onlinejudge.org/external/103/10315.pdf)
 
-* [xxgsdgdfgd]()
+### Game (Chess)
+* [Check The Check](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1137)
+* [Queen](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=2489)
+* [Chess](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=214)
+* [How Many Knights](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=637)
+
+### Game (Others) [Easy]
+* [Minesweeper](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1130)
+* [Mine Sweeper](https://onlinejudge.org/external/102/10279.pdf)
+* [Die Game](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1350)
+* [Guessing Game](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1471)
+* [Snakes and Ladders](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=2454)
+* [Bingo!](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=3391)
+* [Master-Mind Hints](https://onlinejudge.org/external/3/340.pdf)
+* [Hangman Judge](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&category=94&page=show_problem&problem=430)
+
+### Game (Others) [Hard]
+* [Tic Tac Toe](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1304)
+* [Rock-Paper-Scissors Tournament](https://onlinejudge.org/external/109/10903.pdf)
+* [Puzzle](https://onlinejudge.org/external/2/227.pdf)
+* [Crossword Answers](https://onlinejudge.org/external/2/232.pdf)
+
+### Interesting Real Life Problems
+* [WERTYU](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1023)
+* [Longest Nap](https://onlinejudge.org/external/101/10191.pdf)
+* [Beat the Spread!](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1753)
+* [SMS Typing](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=2525)
+* [A Change in Thermal Unit](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=3135)
+* [Traffic Lights](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=97)
+* [Booklet Printing](https://onlinejudge.org/external/6/637.pdf)
+
+### Palindrome
+* [Reverse and Add](https://onlinejudge.org/external/100/10018.pdf)
+* [Mother bear](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1886)
+* [Magic square palindromes](https://onlinejudge.org/external/112/11221.pdf)
+* [Counting Chaos](https://onlinejudge.org/external/113/11309.pdf)
+* [Pesky Palindromes](https://onlinejudge.org/external/3/353.pdf)
+* [Palindromes](https://onlinejudge.org/external/4/401.pdf)
+* [Word Amalgamation](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=583)
+
+### Time
+* [How old are you](https://onlinejudge.org/external/112/11219.pdf)
+* [Mirror Clock](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=2697)
+* [Alarm Clock](https://onlinejudge.org/external/116/11677.pdf)
+* [Doom's Day Algorithm](https://onlinejudge.org/external/120/12019.pdf)
+* [Maya Calendar](https://onlinejudge.org/external/3/300.pdf)
+* [Clock Hands](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=520)
