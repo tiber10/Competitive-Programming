@@ -36,5 +36,27 @@ This repository consists of some solved problems concerning Data Structures & Al
 * [Splitting Numbers](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=3084)
 * [One Little, Two Little, Three Little Endians](https://onlinejudge.org/external/5/594.pdf)
 
+## Data Structures [SETS]
+* [A mid-summer night's dream](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=998)
+* [What is the Median](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1048)
+* [Football (aka Soccer)](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1135)
+* [Contest Scoreboard](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1199)
+* [Colin and Ryan](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1821)
+* [hildren's Game](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1846)
+* [Building designing](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1980)
+* [Sort! Sort!! and Sort!!!](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2296)
+* [Image Coding](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=2635)
+* [Automate the Grades](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=2877)
+* [A Minimum Land Price](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=2924)
+* [Searching Quickly](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=59)
+* [Birthdates](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=3986)
+* [ID Codes](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=82)
+* [Unix ls](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=341)
+* [Little Black Book](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=391)
+* [Lunch in Grid City](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=796)
 
-* [755 - 487--3279]()
+
+
+
+
+* [xxgsdgdfgd]()
