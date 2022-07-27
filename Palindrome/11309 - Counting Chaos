@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool pal(int h, int m) {
+	if (h == 0)
+		return m < 10 || m % 10 == m / 10;
+	else if (h < 10) {
+		return h == m % 10;
+	} else
+		return (h / 10 == m % 10) && (h % 10 == m / 10);
+}
+
+int main() {
+	int n;
+	string line;
+	cin >> n;
+	getline(cin, line);
+	for (; n; n--) {
+		getline(cin, line);
+		int h = (line[0] - '0') * 10 + line[1] - '0';
+		int m = (line[3] - '0') * 10 + line[4] - '0';
+		do {
+			m++;
+			if (m == 60) {
+				m = 0;
+				h++;
+			}
+			if (h == 24)
+				h = 0;
+		} while (!pal(h, m));
+		cout << h / 10 << h % 10 << ":" << m / 10 << m % 10 << endl;
+
+	}
+	return 0;
+}

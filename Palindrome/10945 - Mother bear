@@ -1,0 +1,44 @@
+#include <string.h>
+#include <bits/stdc++.h>
+#include <queue> 
+#include <iostream>
+#define lli long long int
+using namespace std;
+bool ispal(string s){
+    int n=s.length();
+    for(int i=0;i<n;i++){
+        s[i]=tolower(s[i]);
+    }
+    int l=0,r=n-1;
+    while(l<r){
+        if(s[l]!='.'&&s[l]!=','&&s[l]!='!'&&s[l]!='?'&&s[l]!=' '){
+            if(s[r]!='.'&&s[r]!=','&&s[r]!='!'&&s[r]!='?'&&s[r]!=' '){
+                if(s[r]!=s[l]){
+                    return false;
+                }else{
+                    l++,r--;
+                }
+            }else{
+                r--;
+            }  
+        }else{
+            l++;
+        }
+    }
+    return true;
+}
+
+int main()
+{
+    string s;
+    while(getline (cin,s)){
+        if(s=="DONE")
+            break;
+        if(ispal(s)){
+            cout<<"You won't be eaten!"<<endl;
+        }else{
+            cout<<"Uh oh.."<<endl;
+        }
+    }
+	return 0;
+}

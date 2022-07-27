@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+	int w,h,n;
+	while(cin>>w>>h>>n){
+	    if(w==0&&h==0&&n==0){
+	        break;
+	    }
+	    bool t[w+1][h+1];
+	    memset(t, 0, sizeof(t));
+	    int x1,y1,x2,y2;
+	    for(int i=0;i<n;i++){
+	        cin>>x1>>y1>>x2>>y2;
+	        for(int l=min(x1,x2);l<=max(x1,x2);l++){
+	            for(int m=min(y1,y2);m<=max(y1,y2);m++){
+	                t[l][m]=true;
+	            }
+	        }
+	    }
+	    int ans=0;
+	    for(int i=1;i<=w;i++){
+	        for(int j=1;j<=h;j++){
+	            if(t[i][j]==false){
+	                ans++;
+	            }
+	        }
+	    }
+	    if(ans == 0)
+            puts("There is no empty spots.");
+        else if(ans == 1)
+            puts("There is one empty spot.");
+        else
+            printf("There are %d empty spots.\n", ans);
+	}
+    return 0;
+}

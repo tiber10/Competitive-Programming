@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string.h> 
+#include <iostream>
+#define lli long long int
+using namespace std;
+
+int main (){
+    int t;
+    cin>>t;
+    while(t--){
+        int r,c;
+        char p;
+        cin>>p>>r>>c;
+        if(p=='K'){
+            int num = int((r + 1) / 2) * int((c + 1) / 2);
+            cout<<num<<endl;
+        }else if(p=='k'){
+            cout<<r*c/2<<endl;
+        }else if(p=='Q'){
+            cout<<min(r, c)<<endl;
+        }else if(p=='r'){
+            cout<<min(r, c)<<endl;
+        }
+    }
+	return 0;
+} 

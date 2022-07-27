@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string.h> 
+#include <iostream>
+#define lli long long int
+using namespace std;
+int solve(int n, int m){
+    if(n > m) swap(n,m);
+    if(n == 1) return m;
+    if(n == 2) return m / 4 * 4 + (m % 4 == 1? 2 : (m % 4 >= 2? 4 : 0));
+    return (n*m + 1) / 2;
+}
+int main (){
+    int x,y;
+    while(cin>>x>>y,x||y){
+        int ans=solve(x,y);
+        cout<<ans<<" knights may be placed on a "<<x<<" row "<<y<<" column board."<<endl;
+    }
+	return 0;
+} 

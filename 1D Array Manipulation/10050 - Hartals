@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#define lli long long int
+
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        string s[8]={"Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"};
+        int n,p;
+        cin>>n>>p;
+        bool flag[p][n];
+        for(int i=0;i<p;i++){
+            for(int j=0;j<n;j++){
+                flag[i][j]=0;
+            }
+        }
+        int h,ans=0;
+        for(int k=0;k<p;k++){
+            cin>>h;
+            for(int i=h;i<=n;i+=h){
+                flag[k][i-1]=1;
+                
+            }
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<p;j++){
+                if(flag[j][i]){
+                    if(s[i%7]=="Fr" || s[i%7]=="Sa"){
+                        break;
+                    }else{
+                        ans++;
+                        break;
+                    }
+                }
+            }
+        }
+        cout<<ans<<endl;
+    }
+    return 0;
+}

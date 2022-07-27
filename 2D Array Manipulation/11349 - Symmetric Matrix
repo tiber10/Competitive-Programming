@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+	int t, n, cases = 0;
+  char s[3];
+  scanf("%d", &t);
+  while (t--) {
+    long long arr[105][105];
+    scanf("%s %s %d", s, s, &n);
+    for (int i = 1; i <= n; ++i)
+      for (int j = 1;j <= n; ++j)
+        scanf("%lld", &arr[i][j]);
+
+    bool sym = true;
+    for (int i = 1; i <= n && sym; ++i)
+      for (int j = 1; j <= n / 2 + 1 && sym; ++j)
+        if (arr[i][j] < 0 || arr[i][j] != arr[n + 1 - i][n + 1 - j]) sym = false;
+    printf("Test #%d: ", ++cases);
+    if (sym) puts("Symmetric.");
+    else puts("Non-symmetric.");
+  }
+    return 0;
+}

@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#define lli long long int
+
+using namespace std;
+int main(){
+    int r;
+    while(cin>>r, r){
+        cin.ignore();
+
+        int t[r];
+        int sp=99999;
+        for(int w=0;w<r;w++){
+            string x;
+            getline(cin, x);
+            int s=0;
+            for (string::const_iterator iter = x.begin(); iter != x.end(); ++iter)
+            {
+                if (*iter != 'X')
+                    ++s;
+            }
+
+            t[w]=s;
+            sp=min(sp,s);
+        }
+        int ans=0;
+        for(int i=0;i<r;i++){
+            ans+=(t[i]-sp);
+        }
+        cout<<ans<<endl;
+    }
+    return 0;
+}

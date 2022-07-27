@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    string v,s;
+    getchar();
+    getchar();
+    while(t--){
+        int tot=0;
+        map<string,int> m;
+        while(getline(cin,s)&&s.length()>0){
+            m[s]++;
+            tot++;
+        }
+        for(pair<string,int> x:m){
+            float y=(x.second*1.0)/(tot*1.0);
+            y*=100;
+            cout<<x.first<<' ';
+            printf("%.4f\n",y);
+        }
+        if(t){
+            cout<<endl;
+        }
+    }
+    return 0;
+}
+

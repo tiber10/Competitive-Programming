@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string.h> 
+#include <iostream>
+#define lli long long int
+using namespace std;
+
+int main (){
+    int n;
+    cin>>n;
+    while(n--){
+        int x,y;
+        cin>>x>>y;
+        int a=x+y;
+        int b=x-y;
+        if(b<0||a<0||a%2==1||b%2==1){
+            cout<<"impossible"<<endl;
+        }else{
+            cout<<a/2<<' '<<b/2<<endl;}
+    }
+	return 0;
+} 

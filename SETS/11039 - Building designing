@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,x;
+	    cin>>n;
+	    if(n==0){
+	        cout<<0<<endl;
+	        continue;
+	    }
+	    set<pair<int,int>> st;
+	    for(int i=0;i<n;i++){
+	        cin>>x;
+	        st.insert({abs(x),x});
+	    }
+	    int ans=1,prevf,prevs,cmp=0;
+	    for(auto i:st){
+	        if(cmp){
+	            if(prevf<i.first){
+	                if((prevs<0&&i.second>0)||(prevs>0&&i.second<0)){
+	                    ans++;
+	                }
+	            }
+	        }
+	        prevf=i.first;
+	        prevs=i.second;
+	        cmp++;
+	    }
+	    cout<<ans<<endl;
+	}
+    return 0;
+}
