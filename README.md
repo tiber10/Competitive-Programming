@@ -22,3 +22,19 @@ This repository consists of some solved problems concerning Data Structures & Al
 * [Box of Bricks](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=532)
 * [False Coin](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=606)
 * [755 - 487--3279](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=696)
+
+## 2D Arrays
+* [The Blocks Problem](https://onlinejudge.org/external/1/101.pdf)
+* [Free spots](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1644)
+* [Symmetric Matrix](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2324)
+* [Error Correction](https://onlinejudge.org/external/5/541.pdf)
+
+## Bit Manipulation
+* [The Most Potent Corner](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1205)
+* [Grey Codes](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=2114)
+* [Multitasking](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=3077)
+* [Splitting Numbers](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=3084)
+* [One Little, Two Little, Three Little Endians](https://onlinejudge.org/external/5/594.pdf)
+
+
+* [755 - 487--3279]()
