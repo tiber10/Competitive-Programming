@@ -70,6 +70,14 @@ This repository consists of some solved problems concerning Data Structures & Al
 * [Accordian_ Patience](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=63)
 * [Rails](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=455)
 
+### Data Structures [Map]
+* [Hardwood Species](https://onlinejudge.org/external/102/10226.pdf)
+* [Babelfish](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1223)
+
+### Data Structures [Priority Queue]
+* [Add All](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1895)
+* [I Can Guess the Data Structure!](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&category=296&page=show_problem&problem=3146)
+
 
 ## AdHoc
 ### 'Time Waster' Problems
