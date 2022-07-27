@@ -1,0 +1,80 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string.h> 
+#include <iostream>
+#define lli long long int
+using namespace std;
+
+int main (){
+	int x;
+	
+	while(cin>>x){
+	    int west=3,north=2,top=1,but=6,sou=5,est=4;
+	    if(x==0){
+	        break;
+	    }
+	    string s;
+	    while(x--){
+	        cin>>s;
+	        if(s=="north"){
+	            int sw=north;
+	            north=top;
+	            top=sou;
+	            sou=but;
+	            but=sw;
+	        }else if(s=="east"){
+	            int sw=est;
+	            est=top;
+	            top=west;
+	            west=but;
+	            but=sw;
+	        }else if(s=="west"){
+	            int sw=west;
+	            west=top;
+	            top=est;
+	            est=but;
+	            but=sw;
+	        }else{
+	            int sw=sou;
+	            sou=top;
+	            top=north;
+	            north=but;
+	            but=sw;
+	        }
+	    }
+	    cout<<top<<endl;
+	}
+	return 0;
+} 
+//Solution No 2
+/*int main() {
+    int n, tmp;
+    char cmd[128];
+    while(scanf("%d", &n) == 1 && n) {
+        int dice[6] = {1,2,3,4,5,6};
+        while(n--) {
+            scanf("%s", cmd);
+            if(cmd[0] == 'n') {
+                tmp = dice[1], dice[1] = dice[0];
+                dice[0] = dice[4], dice[4] = dice[5];
+                dice[5] = tmp;
+            } else if(cmd[0] == 's') {
+                tmp = dice[1], dice[1] = dice[5];
+                dice[5] = dice[4], dice[4] = dice[0];
+                dice[0] = tmp;
+            } else if(cmd[0] == 'e') {
+                tmp = dice[3], dice[3] = dice[0];
+                dice[0] = dice[2], dice[2] = dice[5];
+                dice[5] = tmp;
+            } else {
+                tmp = dice[3], dice[3] = dice[5];
+                dice[5] = dice[2], dice[2] = dice[0];
+                dice[0] = tmp;
+            }
+        }
+        printf("%d\n", dice[0]);
+    }
+    return 0;
+}*/

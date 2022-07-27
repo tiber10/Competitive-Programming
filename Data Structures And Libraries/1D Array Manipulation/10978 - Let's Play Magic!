@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+    int n;
+    while(cin>>n,n){
+        string t[n];
+        for(int i=0;i<n;i++){
+            t[i]="..";
+        }int pos(0);
+        for(int w=0;w<n;w++){
+            string a,b;
+            cin>>a>>b;
+            int k=0;
+            while(k<b.length()){
+                while(true){
+                    if(pos>=n){
+                        pos%=n;
+                    }
+                    if(t[pos]==".."){
+                        if(k==b.length()-1){
+                            t[pos]=a;
+                            k++;
+                            break;
+                        }else{
+                            pos++;
+                            k++;
+                            break;}
+                    }else{
+                        pos++;
+                    }
+                }
+            }
+        }
+        for(int i=0;i<n-1;i++){
+            cout<<t[i]<<' ';
+        }cout<<t[n-1]<<endl;
+    }
+    return 0;
+}

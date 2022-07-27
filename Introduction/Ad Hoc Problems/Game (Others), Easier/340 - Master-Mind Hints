@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+using namespace std;
+int mima[1005],gs[1005];
+int m[1005], g[1005];
+int x, y,num;
+void match() {
+	for (int i = 0; i < num; i++) {
+		if (mima[i] == gs[i]) {
+			x++;
+			m[i] = 1;
+			g[i] = 1;
+		}
+	}
+	for (int i = 0; i < num; i++) {
+		for (int j = 0; j < num; j++) {
+			if (m[i] == 0 && g[j] == 0 && mima[i] == gs[j]) {
+				y++;
+				m[i] = 1;
+				g[j] = 1;
+			}
+		}
+	}
+}
+int main (){
+	int  game = 0;
+	while (scanf("%d", &num) != EOF && num) {
+		game++;
+		printf("Game %d:\n", game);
+		for (int i = 0; i < num; i++)
+			scanf("%d", &mima[i]);
+		bool flags = true;
+		int count = 0;
+		while (flags) {
+			x = 0, y = 0;
+			for (int i = 0; i < num; i++) {
+				scanf("%d", &gs[i]);
+				if (gs[i] == 0)
+					count++;
+				
+			}
+			if (count == num) {
+				flags = false;
+				break;
+			}
+			match();
+			printf("    (%d,%d)\n", x, y);
+			for (int i = 0; i < num; i++){
+				g[i] = 0;
+				m[i] = 0;
+			}
+		}
+
+	}
+	
+	return 0;
+}

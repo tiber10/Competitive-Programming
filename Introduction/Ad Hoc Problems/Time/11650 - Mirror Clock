@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#define lli long long int
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    while(n--){
+        int h,m;
+        scanf("%d:%d",&h,&m);
+        int mini=0;
+        if(m>0){
+            mini=60-m;
+        }
+        int hours=12-h-(mini>0?1:0);
+	    hours<=0?hours+=12:hours+=0;
+        int mit=(m>0?60-mini:0);
+        if(hours<10){
+            cout<<'0';
+        }cout<<hours<<":";
+        if(mit<10){
+            cout<<'0';
+        }cout<<mit<<endl;
+    }
+    return 0;
+}

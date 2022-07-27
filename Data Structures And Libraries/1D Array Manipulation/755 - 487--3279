@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#define ll long long 
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    char ch[] = "22233344455566677778889991";
+    while(n--){
+        int t;
+        cin>>t;
+        string s;vector<string> v;
+        map<string,int> mp;
+        map<string,int>::iterator it;
+        while(t--){
+            cin>>s;
+            string a="";
+            for(int i=0;i<s.length();i++){
+                if(a.length()==3){a+='-';}
+                if(s[i]=='-'){continue;}
+                if(s[i]>=65&&s[i]<=90 &&s[i]!='Z'&&s[i]!='Q'){
+                    int m=s[i]-'A';
+                    a+=ch[m];
+                }else if(s[i]>=48&&s[i]<=57){
+                    a+=s[i];
+                }
+            }mp[a]++;
+        }
+        it=mp.begin();
+		int count=0;
+        while(it!=mp.end())
+		{
+			if(it->second>1){
+				cout<<it->first<<" "<<it->second<<endl;count++;
+			}
+			it++;
+		}
+		if(count==0)cout<<"No duplicates.\n";
+		if(n)cout<<endl;
+        
+    }
+    return 0;
+}
