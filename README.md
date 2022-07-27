@@ -3,5 +3,7 @@ This repository consists of some solved problems concerning Data Structures & Al
 
 # List of the solved problems
 ## 1D Arrays
-* https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=979
-* https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=991
+* [Jolly Jumpers](https://www.google.com](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=979)
+* [Hartals](https://www.google.com](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=991)
+* 
+* 
