@@ -55,6 +55,19 @@ This repository consists of some solved problems concerning Data Structures & Al
 * [Little Black Book](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=391)
 * [Lunch in Grid City](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=796)
 
+## Data Structures [Linked Lists]
+* [Broken Keyboard (a.k.a. Beiju Text)](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=3139)
+
+## Data Structures [Queue and Deque]
+* [Ferry Loading III](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1842)
+* [Throwing cards away I](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1876)
+* [Ferry Loading IV](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1975)
+* [Team Queue](https://onlinejudge.org/external/5/540.pdf)
+
+## Data Structures [Stack]
+* [Accordian_ Patience](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=63)
+* [Rails](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=455)
+
 
 
 
