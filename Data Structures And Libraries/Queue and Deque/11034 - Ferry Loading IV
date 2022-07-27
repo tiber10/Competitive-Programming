@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int l,m,n,ans(0),curr;
+        string s;
+        cin>>l>>m;
+        l*=100;
+        queue<int> left,right;
+        for(int i=0;i<m;i++){
+            cin>>n>>s;
+            if(s=="left"){
+                left.push(n);
+            }else{
+                right.push(n);
+            }
+        }
+        while(!left.empty()||!right.empty()){
+            curr=0;
+            while(!left.empty()){
+                if(curr+left.front()<=l){
+                    curr+=left.front();
+                    left.pop();
+                }else{
+                    break;
+                }
+            }
+            ans++;
+            curr=0;
+            while(!right.empty()){
+                if(curr+right.front()<=l){
+                    curr+=right.front();
+                    right.pop();
+                }else{
+                    break;
+                }
+            }
+            if(curr||!left.empty()){ans++;}
+        }
+        cout<<ans<<endl;
+        
+    }
+    return 0;
+}
+

@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string.h> 
+#include <iostream>
+#define lli long long int
+using namespace std;
+
+bool comparator(char a, char b){
+	if(tolower(a) == tolower(b)){
+		return a<b;
+	}
+	return tolower(a) < tolower(b);
+}
+
+int main() {
+	int n;
+	cin>>n;
+	while(n--){
+	    char s[10];
+	    cin>>s;
+	    sort(s,s+strlen(s),comparator);
+	    do{
+	        cout<<s<<endl;
+	    }while(next_permutation(s,s+strlen(s)));
+	    cout<<"\n";
+	}
+	return 0;
+}

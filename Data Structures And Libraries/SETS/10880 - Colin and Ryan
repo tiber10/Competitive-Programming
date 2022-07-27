@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+	long long t,kase=1;
+	cin>>t;
+	while(t--){
+	    long long r,c;
+	    cin>>c>>r;
+	    cout<<"Case #"<<kase++<<':';
+	    if(c==r){
+	        cout<<' '<<0;
+	    }else if(r>int(c/2)){
+	        cout<<endl;
+	        continue;
+	    }else{
+	        set<long long> ans;
+	        for(long long i=1;i*i<=(c-r);i++){
+	            if((c-r)%i==0){
+	                if(i>r)ans.insert(i);
+	                if(((c-r)/i)>r)ans.insert((c-r)/i);
+	            }
+	        }
+	        for(auto i : ans){
+	            cout<<' '<<i;
+	        }
+	    }
+	    cout<<endl;
+	}
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+	long long t;
+	cin>>t;
+	while(t--){
+	    long long n;
+	    priority_queue<long long> pr;
+	    while(cin>>n,n){
+	        pr.push(n);
+	    }
+	    long long ans=0,cmp=1;
+	    while(!pr.empty() && ans<=5000000){
+	        long long curr=pr.top();
+	        pr.pop();
+	        ans+=(2*pow(curr,cmp++));
+	    }
+	    if(ans>5000000){
+	        cout<<"Too expensive"<<endl;
+	    }else{
+	        cout<<ans<<endl;
+	    }
+	}
+    return 0;
+}

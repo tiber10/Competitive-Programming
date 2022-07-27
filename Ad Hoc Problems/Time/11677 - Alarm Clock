@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string.h> 
+#include <iostream>
+#define lli long long int
+using namespace std;
+
+int main()
+{
+    int a,b,x,y;
+    while(cin>>a>>b>>x>>y){
+        if(a==0&&b==0&&x==0&&y==0){
+            break;
+        }
+        int total=60*24;
+        int t1=a*60+b;
+        int t2=x*60+y;
+        if(t1>t2){
+            t2+=total;
+        }
+        cout<<t2-t1<<endl;
+    }
+    return 0;
+}

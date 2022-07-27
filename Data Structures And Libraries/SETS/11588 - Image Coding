@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+	int t;
+	cin>>t;
+	int kase=1;
+	while(t--){
+	    int tab[26];
+	    for(int i=0;i<26;i++){
+	        tab[i]=0;
+	    }
+	    int r,c,m,n;
+	    cin>>r>>c>>m>>n;
+	    string s;
+	    for(int i=0;i<r;i++){
+	        cin>>s;
+	        for(int j=0;j<s.length();j++){
+	            tab[s[j]-'A']++;
+	        }
+	    }sort(tab,tab+26);
+	    int ans=tab[25],curr=tab[25],freq=0;
+	    for(int i=24;i>=0;i--){
+	        if(tab[i]==curr){
+	            ans+=tab[i];
+	        }else if(tab[i]>0){
+	            freq+=tab[i];
+	        }
+	    }
+	    cout<<"Case "<<kase++<<": "<<freq*n + ans*m<<endl;
+	}
+    return 0;
+}

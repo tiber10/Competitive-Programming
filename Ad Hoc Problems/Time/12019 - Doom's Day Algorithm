@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <string> 
+#include <iostream>
+#define lli long long int
+using namespace std;
+
+int main()
+{
+    string t[8]={"","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    int cal[13][32];
+    int days[13] = {0, 31, 28, 31, 30, 31, 30,31, 31, 30, 31, 30, 31};
+    int dayperweek=6;
+    for(int i=12;i>=1;i--){
+        for(int j=days[i];j>=1;j--){
+            cal[i][j]=dayperweek;
+            dayperweek--;
+            dayperweek<1?dayperweek=7:dayperweek+=0;
+        }
+    }
+    int n;
+    cin>>n;
+    while(n--){
+        int h,m;
+        scanf("%d %d",&h,&m);
+        cout<<t[cal[h][m]]<<endl;
+    }
+    return 0;
+}
